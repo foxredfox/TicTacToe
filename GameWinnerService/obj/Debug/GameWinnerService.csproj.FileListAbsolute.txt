@@ -1,5 +1,5 @@
-C:\Users\kulst\Desktop\Chapter 4\TicTacToe-master\GameWinnerService\bin\Debug\GameWinnerService.dll
-C:\Users\kulst\Desktop\Chapter 4\TicTacToe-master\GameWinnerService\bin\Debug\GameWinnerService.pdb
-C:\Users\kulst\Desktop\Chapter 4\TicTacToe-master\GameWinnerService\obj\Debug\GameWinnerService.csprojResolveAssemblyReference.cache
-C:\Users\kulst\Desktop\Chapter 4\TicTacToe-master\GameWinnerService\obj\Debug\GameWinnerService.dll
-C:\Users\kulst\Desktop\Chapter 4\TicTacToe-master\GameWinnerService\obj\Debug\GameWinnerService.pdb
+c:\users\black\onedrive\dokumenter\visual studio 2015\Projects\TicTacToe\GameWinnerService\bin\Debug\GameWinnerService.dll
+c:\users\black\onedrive\dokumenter\visual studio 2015\Projects\TicTacToe\GameWinnerService\bin\Debug\GameWinnerService.pdb
+c:\users\black\onedrive\dokumenter\visual studio 2015\Projects\TicTacToe\GameWinnerService\obj\Debug\GameWinnerService.csprojResolveAssemblyReference.cache
+c:\users\black\onedrive\dokumenter\visual studio 2015\Projects\TicTacToe\GameWinnerService\obj\Debug\GameWinnerService.dll
+c:\users\black\onedrive\dokumenter\visual studio 2015\Projects\TicTacToe\GameWinnerService\obj\Debug\GameWinnerService.pdb
