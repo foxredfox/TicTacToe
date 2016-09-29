@@ -15,7 +15,20 @@ namespace TicTacToe.Services
     {
         public char Validate(char[,] gameBoard)
         {
+            var columOneChar = gameBoard[0, 0];
+            var columTwoChar = gameBoard[0, 1];
+            var columThreeChar = gameBoard[0, 2];
+
+            if (columOneChar == columTwoChar &&
+                 columTwoChar == columThreeChar)
+            {
+                return columOneChar;
+            }
+
+
             return ' ';
+
+
         }
     }
 }
