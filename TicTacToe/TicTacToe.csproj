@@ -53,6 +53,12 @@
     <Compile Include="GameWinnerServiceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameWinnerService\GameWinnerService.csproj">
+      <Project>{80b994d7-58be-45ef-8a75-98284a75f597}</Project>
+      <Name>GameWinnerService</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
