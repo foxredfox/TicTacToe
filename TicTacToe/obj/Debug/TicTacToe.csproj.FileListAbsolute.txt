@@ -7,3 +7,12 @@ c:\users\black\onedrive\dokumenter\visual studio 2015\Projects\TicTacToe\TicTacT
 c:\users\black\onedrive\dokumenter\visual studio 2015\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
 c:\users\black\onedrive\dokumenter\visual studio 2015\Projects\TicTacToe\TicTacToe\bin\Debug\GameWinnerService.dll
 c:\users\black\onedrive\dokumenter\visual studio 2015\Projects\TicTacToe\TicTacToe\bin\Debug\GameWinnerService.pdb
+C:\Users\Pelle\Desktop\TicTacToe-master\TicTacToe\bin\Debug\TicTacToe.dll
+C:\Users\Pelle\Desktop\TicTacToe-master\TicTacToe\bin\Debug\TicTacToe.pdb
+C:\Users\Pelle\Desktop\TicTacToe-master\TicTacToe\bin\Debug\GameWinnerService.dll
+C:\Users\Pelle\Desktop\TicTacToe-master\TicTacToe\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Pelle\Desktop\TicTacToe-master\TicTacToe\bin\Debug\GameWinnerService.pdb
+C:\Users\Pelle\Desktop\TicTacToe-master\TicTacToe\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Pelle\Desktop\TicTacToe-master\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
+C:\Users\Pelle\Desktop\TicTacToe-master\TicTacToe\obj\Debug\TicTacToe.dll
+C:\Users\Pelle\Desktop\TicTacToe-master\TicTacToe\obj\Debug\TicTacToe.pdb

@@ -48,5 +48,20 @@ namespace TicTacToe
             var actual = gameWinnerService.Validate(gameBoard);
             Assert.AreEqual(expected.ToString(), actual.ToString());
         }
+
+
+        [TestMethod]
+        public void PlayerWithThreeInARowDiagonallyDownAndToRightIsWinner()
+        {
+            var _gameBoard = gameBoard;
+            const char expected = 'X';
+            for (var cellIndex = 0; cellIndex < 3; cellIndex++)
+            {
+                _gameBoard[cellIndex, cellIndex] = expected;
+            }
+            var actual = gameWinnerService.Validate(_gameBoard);
+            Assert.AreEqual(expected.ToString(), actual.ToString());
+
+        }
     }
 }
