@@ -12,12 +12,27 @@ namespace TicTacToe
         {
             IGameWinnerService gameWinnerService = new GameWinnerService();
             const char expected = ' ';
-            var gameBoard = new char[3, 3] { {' ', ' ', ' '},
-                                                                                  {' ', ' ', ' '},
+            var gameBoard = new char[3, 3] {{' ', ' ', ' '},
+                                            {' ', ' ', ' '},
                                             {' ', ' ', ' '}};
 
             var actual = gameWinnerService.Validate(gameBoard);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void PlayerWithAllSpacesInTopRowIsWinning()
+        {
+            IGameWinnerService gameWinnerService = new GameWinnerService();
+            const char expected = 'X';
+            var gameBoard = new char[3, 3]
+                    { { expected, expected, expected},
+                      {' ', ' ', ' '},
+                      {' ', ' ', ' '}};
+
+            var actual = gameWinnerService.Validate(gameBoard);
+            Assert.AreEqual(expected.ToString(), actual.ToString());
+        }
+
     }
 }
