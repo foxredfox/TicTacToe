@@ -25,6 +25,10 @@ namespace TicTacToe.Services
             if (currentWinningSymbol != SymbolForNoWinner)
                 return currentWinningSymbol;
 
+            currentWinningSymbol = _CheckForThreeInARowDiagonally(gameBoard);
+            if (currentWinningSymbol != SymbolForNoWinner)
+                return currentWinningSymbol;
+
             currentWinningSymbol = CheckForThreeInARowDiagonally(gameBoard);
 
 
@@ -51,20 +55,24 @@ namespace TicTacToe.Services
 
             return SymbolForNoWinner;
         }
-    
+
 
         private static char CheckForThreeInARowInVerticalColumn(char[,] gameBoard)
         {
-            var rowOneChar   = gameBoard[0, 0];
-            var rowTwoChar   = gameBoard[1, 0];
-            var rowThreeChar = gameBoard[2, 0];
-        
-            if (rowOneChar == rowTwoChar &&
-                rowTwoChar == rowThreeChar)
+            for (int i = 0; i <= 2; i++)
             {
-                return rowOneChar;
-            }	
-        
+                var rowOneChar = gameBoard[0, i];
+                var rowTwoChar = gameBoard[1, i];
+                var rowThreeChar = gameBoard[2, i];
+
+                if (rowOneChar == rowTwoChar &&
+                    rowTwoChar == rowThreeChar &&
+                    rowOneChar != SymbolForNoWinner)
+                {
+                    return rowOneChar;
+                }
+            }
+
             return SymbolForNoWinner;
         }
         private static char CheckForThreeInARowDiagonally(char[,] gameBoard)
@@ -72,6 +80,21 @@ namespace TicTacToe.Services
             var cellOneChar   = gameBoard[0, 0];
             var cellTwoChar   = gameBoard[1, 1];
             var cellThreeChar = gameBoard[2, 2];
+
+            if (cellOneChar == cellTwoChar &&
+                 cellTwoChar == cellThreeChar)
+            {
+                return cellOneChar;
+            }
+
+            return SymbolForNoWinner;
+        }
+
+        private static char _CheckForThreeInARowDiagonally(char[,] gameBoard)
+        {
+            var cellOneChar = gameBoard[0, 2];
+            var cellTwoChar = gameBoard[1, 1];
+            var cellThreeChar = gameBoard[2, 0];
 
             if (cellOneChar == cellTwoChar &&
                  cellTwoChar == cellThreeChar)
