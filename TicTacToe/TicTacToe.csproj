@@ -50,10 +50,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AITest.cs" />
     <Compile Include="GameWinnerServiceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AI\AI.csproj">
+      <Project>{a757473f-75d9-41e4-b1ec-e87220ee85c5}</Project>
+      <Name>AI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GameWinnerService\GameWinnerService.csproj">
       <Project>{80b994d7-58be-45ef-8a75-98284a75f597}</Project>
       <Name>GameWinnerService</Name>

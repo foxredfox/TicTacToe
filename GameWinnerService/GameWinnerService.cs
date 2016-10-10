@@ -25,11 +25,11 @@ namespace TicTacToe.Services
             if (currentWinningSymbol != SymbolForNoWinner)
                 return currentWinningSymbol;
 
-            currentWinningSymbol = _CheckForThreeInARowDiagonally(gameBoard);
-            if (currentWinningSymbol != SymbolForNoWinner)
+            currentWinningSymbol = CheckForThreeInARowDiagonally(gameBoard);
+            if(currentWinningSymbol != SymbolForNoWinner)
                 return currentWinningSymbol;
 
-            currentWinningSymbol = CheckForThreeInARowDiagonally(gameBoard);
+            currentWinningSymbol = CheckForThreeInARowDiagonally2(gameBoard);
 
 
             return currentWinningSymbol;
@@ -61,8 +61,9 @@ namespace TicTacToe.Services
         {
             for (int i = 0; i <= 2; i++)
             {
-                var rowOneChar = gameBoard[0, i];
-                var rowTwoChar = gameBoard[1, i];
+
+                var rowOneChar   = gameBoard[0, i];
+                var rowTwoChar   = gameBoard[1, i];
                 var rowThreeChar = gameBoard[2, i];
 
                 if (rowOneChar == rowTwoChar &&
@@ -71,9 +72,11 @@ namespace TicTacToe.Services
                 {
                     return rowOneChar;
                 }
+
             }
 
             return SymbolForNoWinner;
+
         }
         private static char CheckForThreeInARowDiagonally(char[,] gameBoard)
         {
@@ -89,11 +92,10 @@ namespace TicTacToe.Services
 
             return SymbolForNoWinner;
         }
-
-        private static char _CheckForThreeInARowDiagonally(char[,] gameBoard)
+        private static char CheckForThreeInARowDiagonally2(char[,] gameBoard)
         {
-            var cellOneChar = gameBoard[0, 2];
-            var cellTwoChar = gameBoard[1, 1];
+            var cellOneChar   = gameBoard[0, 2];
+            var cellTwoChar   = gameBoard[1, 1];
             var cellThreeChar = gameBoard[2, 0];
 
             if (cellOneChar == cellTwoChar &&

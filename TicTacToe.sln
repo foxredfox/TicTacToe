@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameWinnerService", "GameWinnerService\GameWinnerService.csproj", "{80B994D7-58BE-45EF-8A75-98284A75F597}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI", "AI\AI.csproj", "{A757473F-75D9-41E4-B1EC-E87220EE85C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{80B994D7-58BE-45EF-8A75-98284A75F597}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80B994D7-58BE-45EF-8A75-98284A75F597}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80B994D7-58BE-45EF-8A75-98284A75F597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A757473F-75D9-41E4-B1EC-E87220EE85C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A757473F-75D9-41E4-B1EC-E87220EE85C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A757473F-75D9-41E4-B1EC-E87220EE85C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A757473F-75D9-41E4-B1EC-E87220EE85C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
