@@ -9,41 +9,75 @@ namespace TicTacToe.AI
     public class AIOpponent
     {
         private const char SymbolForNoWinner = ' ';
+        private       bool madeMove          = false;
 
         public char[,] NextMove(char[,] gameBoard)
         {
-            gameBoard = CanWinOnRow(gameBoard);
+            madeMove = false;
+
+            WinOnRow(ref gameBoard);
+
+            WinDiagonally(ref gameBoard);
 
             return gameBoard;
         }
+
+        private void WinDiagonally(ref char[,] gameBoard)
+        {
+            int rightToLeft = WinSlot(gameBoard[0, 0], gameBoard[1, 1], gameBoard[2, 2]);
+            int leftToRight = WinSlot(gameBoard[0, 2], gameBoard[1, 1], gameBoard[2, 0]);
+
+            switch(leftToRight)
+            {
+                case 0:
+                    gameBoard[0,2] = 'X';
+                    madeMove = true;
+                    break;
+                case 1:
+                    gameBoard[1,1] = 'X';
+                    madeMove = true;
+                    break;
+                case 2:
+                    gameBoard[2,0] = 'X';
+                    madeMove = true;
+                    break;
+            }
+
+            if(rightToLeft >= 0)
+            {
+                gameBoard[rightToLeft,rightToLeft] = 'X';
+                madeMove = true;
+            }
+        }
+
         
-        public char[,] CanWinOnRow(char[,] gameBoard)
+        private void WinOnRow( ref char[,] gameBoard )
         {
         	for(int i = 0; i <= 2; i++)
             {
-        		var columnOneChar   = gameBoard[i, 0];
-				var columnTwoChar   = gameBoard[i, 1];
-        		var columnThreeChar = gameBoard[i, 2];
+                int winSlot = WinSlot(gameBoard[i, 0], gameBoard[i, 1], gameBoard[i, 2]);
                 
-                if (columnOneChar == SymbolForNoWinner && columnTwoChar == columnThreeChar)
+                if(winSlot >= 0)
                 {
-                    gameBoard[i,0] = 'X';
-                }
-
-                if (columnTwoChar == SymbolForNoWinner && columnThreeChar == columnOneChar)
-                {
-                    gameBoard[i,1] = 'X';
-                }
-
-                if (columnThreeChar == SymbolForNoWinner && columnTwoChar == columnOneChar)
-                {
-                    gameBoard[i,2] = 'X';
+                    gameBoard[i,winSlot] = 'X';
+                    madeMove = true;
                 }
             }
+        }
 
-            return gameBoard;
+        private int WinSlot(char a, char b, char c)
+        {
+            if (a == SymbolForNoWinner && b == c)
+                return 0;
+            if (b == SymbolForNoWinner && a == c)
+                return 1;
+            if (c == SymbolForNoWinner && a == b)
+                return 2;
+            
+            return -1;
         }
         
+
 
     }
 }
