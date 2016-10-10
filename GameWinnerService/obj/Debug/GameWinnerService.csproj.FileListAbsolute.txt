@@ -8,3 +8,8 @@ C:\Users\Pelle\Desktop\TicTacToe-master\GameWinnerService\bin\Debug\GameWinnerSe
 C:\Users\Pelle\Desktop\TicTacToe-master\GameWinnerService\obj\Debug\GameWinnerService.csprojResolveAssemblyReference.cache
 C:\Users\Pelle\Desktop\TicTacToe-master\GameWinnerService\obj\Debug\GameWinnerService.dll
 C:\Users\Pelle\Desktop\TicTacToe-master\GameWinnerService\obj\Debug\GameWinnerService.pdb
+C:\Users\black\Source\Repos\TicTacToe4\GameWinnerService\bin\Debug\GameWinnerService.dll
+C:\Users\black\Source\Repos\TicTacToe4\GameWinnerService\bin\Debug\GameWinnerService.pdb
+C:\Users\black\Source\Repos\TicTacToe4\GameWinnerService\obj\Debug\GameWinnerService.dll
+C:\Users\black\Source\Repos\TicTacToe4\GameWinnerService\obj\Debug\GameWinnerService.pdb
+C:\Users\black\Source\Repos\TicTacToe4\GameWinnerService\obj\Debug\GameWinnerService.csprojResolveAssemblyReference.cache

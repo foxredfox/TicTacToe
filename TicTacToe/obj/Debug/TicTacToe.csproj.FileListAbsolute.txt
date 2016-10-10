@@ -16,3 +16,14 @@ C:\Users\Pelle\Desktop\TicTacToe-master\TicTacToe\bin\Debug\Microsoft.VisualStud
 C:\Users\Pelle\Desktop\TicTacToe-master\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
 C:\Users\Pelle\Desktop\TicTacToe-master\TicTacToe\obj\Debug\TicTacToe.dll
 C:\Users\Pelle\Desktop\TicTacToe-master\TicTacToe\obj\Debug\TicTacToe.pdb
+C:\Users\black\Source\Repos\TicTacToe4\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
+C:\Users\black\Source\Repos\TicTacToe4\TicTacToe\obj\Debug\TicTacToe.dll
+C:\Users\black\Source\Repos\TicTacToe4\TicTacToe\obj\Debug\TicTacToe.pdb
+C:\Users\black\Source\Repos\TicTacToe4\TicTacToe\bin\Debug\TicTacToe.dll
+C:\Users\black\Source\Repos\TicTacToe4\TicTacToe\bin\Debug\TicTacToe.pdb
+C:\Users\black\Source\Repos\TicTacToe4\TicTacToe\bin\Debug\AI.dll
+C:\Users\black\Source\Repos\TicTacToe4\TicTacToe\bin\Debug\GameWinnerService.dll
+C:\Users\black\Source\Repos\TicTacToe4\TicTacToe\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\black\Source\Repos\TicTacToe4\TicTacToe\bin\Debug\AI.pdb
+C:\Users\black\Source\Repos\TicTacToe4\TicTacToe\bin\Debug\GameWinnerService.pdb
+C:\Users\black\Source\Repos\TicTacToe4\TicTacToe\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml

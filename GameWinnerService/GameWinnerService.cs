@@ -15,7 +15,7 @@ namespace TicTacToe.Services
     {
     	private const char SymbolForNoWinner = ' ';
       
-      public char Validate(char[,] gameBoard)
+        public char Validate(char[,] gameBoard)
         {
 		    var currentWinningSymbol = CheckForThreeInARowInHorizontalRow(gameBoard);            
             if(currentWinningSymbol != SymbolForNoWinner)
